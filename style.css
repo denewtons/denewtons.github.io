@@ -282,7 +282,7 @@
         }
         .wd{
           max-width: 300px;
-          max-height: 600px;
+          max-height: auto;
           background-color: black;
           opacity: 0.8;
           padding: 55px;
@@ -291,7 +291,7 @@
           text-align: center;
           text-transform: uppercase;
           font-weight: 250px;
-          color:rgb(247, 247, 4);
+          color:orangered;
         }
         .wd h4{
           text-align: center;
