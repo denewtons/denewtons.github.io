@@ -267,21 +267,30 @@
     margin: 0;
     padding: 10px;
   }
+  #format{
+    display: flex;
+    flex-direction: row;
+  }
   #part1{
       padding-bottom: 10px;
       display: flex;
       flex-direction: row;
   }
+  #make{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
   .happat{
-            width: 400px;
+            width: 30%;
             height: auto;
             position: absolute;
-            padding-right: 20px;
+            padding-right: 1%;
             display: flex;
             flex-direction: row;
         }
         .wd{
-          max-width: 300px;
+          max-width: 30%S;
           max-height: auto;
           background-color: black;
           opacity: 0.8;
@@ -305,23 +314,22 @@
           color:rgb(247, 247, 4);
         }
   #content {
-      width: 500px;
+      width: 40%;
     display: flex;
     flex-direction: column;
   }
   footer{
-                 color: chartreuse;
-        
+                color: chartreuse;
                  text-align: center;
                  background-color: rgb(29, 29, 31);
-                 min-height: 70%;
+                 min-height: 50%%;
                 text-transform: capitalize;
                 text-decoration-style: double;
              }
              footer iframe{
                 padding:30px ;
                 min-width:40%;
-                height:250px;
+                height:30%;
              }
              footer h2{
                text-transform: capitalize;
@@ -329,6 +337,50 @@
                  padding: 1%;
                  text-align: center;   
              }
+             .dropbtn {
+              background-color: lightskyblue;
+              color: #000000;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+              text-align: center;
+              border-radius: 20%;
+            }
+            .dropdown {
+              color: black;
+              position: relative;
+              display: inline-block;
+              text-align:center;
+            }
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #dfd9d9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              border-radius: 20%;
+            }
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              border-radius: 20%;
+            }
+            .dropdown-content a:hover {
+              background-color: rgb(255, 187, 0);
+              border-radius: 20%;
+            }
+            .dropdown:hover .dropdown-content {
+              display: block;
+            } 
+           .dropdown:hover .dropbtn {
+              background-color: indigo;
+              border-radius: 20%;
+
+            }
   #footer {
     clear: both;
     margin: 10px 0;
