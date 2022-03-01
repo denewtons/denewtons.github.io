@@ -305,7 +305,7 @@
           color:rgb(247, 247, 4);
         }
   #content {
-      width: 600px;
+      width: 500px;
     display: flex;
     flex-direction: column;
   }
