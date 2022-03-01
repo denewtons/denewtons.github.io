@@ -297,11 +297,6 @@ body {
     margin: auto;
     font-family: sans-serif;
   }
-  div {
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    
-  }
   header{
                 background-color: #ffffff;
                 color: hsl(0, 0%, 5%);
