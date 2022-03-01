@@ -1,0 +1,410 @@
+<head>
+<style>
+    $highlight: #41e0fd;
+$default: #20232a;
+$light: #f8f8f8;
+$dark: #000000;
+$light-1: darken($light, 10);
+$light-2: darken($light, 20);
+$dark-1: darken($light, 60);
+$dark-2: darken($light, 50);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-weight: 300;
+	letter-spacing: -0.5px;
+	background: #fff;
+	color: $dark-1;
+}
+h1,
+h2,
+h3,
+h4 {
+	color: $default;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+p {
+	margin-bottom: 1rem;
+}
+header {
+	padding: 15px;
+	background: $default;
+	color: $light-1;
+	text-align: center;
+	span,
+	.logo > * {
+		color: $highlight;
+	}
+	&.navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 999;
+		a {
+			color: $light-2;
+			text-decoration: none;
+			margin: 0 5px;
+			&.logo {
+				margin: 0;
+				padding: 0;
+				font-size: 1.5em;
+				line-height: 1;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1.3fr 4fr 1fr;
+	grid-gap: 30px;
+	aside,
+	section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	section {
+		padding-left: 20px;
+		padding-right: 20px;
+		h2 {
+			color: $dark;
+		}
+	}
+	aside {
+		padding-left: 20px;
+		padding-right: 20px;
+		> ol,
+		> ul {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 80px;
+			a {
+				text-decoration: none;
+				display: inline-block;
+				&:hover {
+					color: $dark-1;
+				}
+			}
+		}
+		ul,
+		ol {
+			list-style: none;
+		}
+		ul li > ul {
+			padding-left: 10px;
+		}
+		&.sidebar-left {
+			background: $light;
+			border-right: 1px solid $light-1;
+			font-size: 1.8rem;
+			a {
+				color: $dark;
+			}
+			ol > li > a {
+				font-size: 2rem;
+				font-weight: 400;
+				margin: 10px 0;
+			}
+		}
+		&.sidebar-right {
+			color: $dark-1;
+			ul:first-child {
+				border-left: 1px solid $light-1;
+				padding-left: 15px;
+			}
+			a {
+				color: $dark-1;
+			}
+		}
+	}
+}
+
+footer {
+	background: $default;
+	color: $light-2;
+	padding: 20px;
+	text-align: center;
+	a {
+		color: $light-2;
+	}
+}
+</style>
+</head>
+<header class="header-top">
+	Black Lives Matter.
+	<span>Support the Equal Justice Initiative.</span>
+</header>
+<header class="navigation">
+	<nav class="main-menu">
+        <div class="happat">
+         <h1> Welcome to pie investment</h1>
+         <h4> <i>Be an Invisible Business Person, Under The Best Investment Training Membership.</i></h4>
+         <h2> Call <br>0746260423</br>  <br>for queries</br></h2>
+         </div>
+	</nav>
+	<nav class="sub-menu">
+		<a href="#">link-1</a>
+		<a href="#">link-2</a>
+		<a href="#">link-3</a>
+	</nav>
+</header>
+<main>
+	<aside class="sidebar-left">
+		<ol>
+			<li>
+				<a href="#heading-1">Heading 1</a>
+				<ul>
+					<li><a href="">Subheading 1.1</a></li>
+					<li><a href="">Subheading 1.2</a></li>
+					<li><a href="">Subheading 1.3</a></li>
+					<li><a href="">Subheading 1.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#heading-2">Heading 2</a>
+				<ul>
+					<li><a href="">Subheading 2.1</a></li>
+					<li><a href="">Subheading 2.2</a></li>
+					<li><a href="">Subheading 2.3</a></li>
+					<li><a href="">Subheading 2.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#heading-3">Heading 3</a>
+				<ul>
+					<li><a href="">Subheading 3.1</a></li>
+					<li><a href="">Subheading 3.2</a></li>
+					<li><a href="">Subheading 3.3</a></li>
+					<li><a href="">Subheading 3.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#heading-4">Heading 4</a>
+				<ul>
+					<li><a href="">Subheading 4.1</a></li>
+					<li><a href="">Subheading 4.2</a></li>
+					<li><a href="">Subheading 4.3</a></li>
+					<li><a href="">Subheading 4.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#heading-5">Heading 5</a>
+				<ul>
+					<li><a href="">Subheading 5.1</a></li>
+					<li><a href="">Subheading 5.2</a></li>
+					<li><a href="">Subheading 5.3</a></li>
+					<li><a href="">Subheading 5.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#heading-6">Heading 6</a>
+				<ul>
+					<li><a href="">Subheading 6.1</a></li>
+					<li><a href="">Subheading 6.2</a></li>
+					<li><a href="">Subheading 6.3</a></li>
+					<li><a href="">Subheading 6.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Heading 7</a>
+				<ul>
+					<li><a href="">Subheading 7.1</a></li>
+					<li><a href="">Subheading 7.2</a></li>
+					<li><a href="">Subheading 7.3</a></li>
+					<li><a href="">Subheading 7.4</a></li>
+				</ul>
+			</li>
+		</ol>
+	</aside>
+	<section>
+		<p>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci mollitia, dolorum dolores
+			pariatur quaerat eaque officiis magni provident quibusdam sequi cum numquam optio cupiditate
+			ducimus, obcaecati debitis aliquam beatae voluptas?
+		</p>
+		<div id="heading-1">
+			<h2>Dummy text heading 1</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi doloremque commodi quos
+				provident exercitationem ut, dolor magni aspernatur, explicabo adipisci illo in a eaque aut quod
+				laborum. Debitis neque,<br /><br />
+				incidunt, sed reiciendis, minus iste ratione blanditiis fuga ducimus itaque accusamus libero
+				optio possimus odit rem inventore molestias porro eaque? Voluptatum quas ipsum veniam qui itaque
+				debitis pariatur maiores inventore vel porro repellendus voluptas vuptatem? Incidunt velit
+				laborum sed voluptas recusandae nisi nulla commodi unde cupiditate, reprehenderit<br /><br />
+				itaque nemo aliquam dicta cumque sequi atque dolore corporis soluta? Tempora unde non, magnam
+				consequatur autem suscipit ea nostrum eos in vel maiores facilis recusandae id iusto esse
+				explicabo consectetur eum repellendus, modi nam quas accusantium placeat commodi quisquam. Vel
+				accusantium modi omnis ad necessitatibus quas expedita ut at iure facere ullam obcaecati, quidem
+				vitae dolorem quo architecto minima impedit. Neque sed earum adipisci culpa ex quidem veniam
+			</p>
+		</div>
+		<div id="heading-2">
+			<h2>Dummy text heading 2</h2>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione tempore dignissimos quae nulla
+				quis placeat vero expedita quasi vel, commodi rerum vitae deleniti possimus autem. Iusto
+				expedita minus doloremque, perspiciatis error quidem delectus illum id. Cum, commodi! Earum
+				itaque at architecto dolorem, <br /><br />
+				quae cumque laudantium provident vero possimus, nisi obcaecati harum unde. Sequi nemo vero
+				accusantium neque minima voluptatem id beatae tenetur ab non perferendis nisi eum magni cumque
+				aliquam, voluptatum nihil ducimus molestias eligendi repellat dolorum provident ut, mollitia
+				totam. Cupiditate, hic error ipsa dicta maxime explicabo voluptatem laborum dolorem tenetur
+				<br /><br />
+				alias quod necessitatibus facere omnis sapiente, nihil cum, qui eligendi suscipit dolores!
+				Maiores fuga minus doloremque beatae.
+			</p>
+			<p>
+				It amet consectetur adipisicing elit. At unde vel quibusdam porro inventore eos, consectetur
+				repudiandae adipisci temporibus hic culpa nesciunt fuga. Id consequuntur placeat neque vero qui
+				aspernatur. Fugit perferendis vel mollitia minus ad temporibus, hic praesentium id, sapiente
+				quidem culpa debitis aliquam facilis eaque nisi totam quis provident dolor libero illo non
+				doloremque assumenda? Voluptate aut, animi earum asperiores ullam a vero sit, quod, voluptatibus
+				natus recusandae excepturi cum. <br /><br />
+				Animi eum ipsam numquam rem consequatur veritatis, nesciunt ullam officia? Quidem quasi sapiente
+				deleniti, eligendi odit illum perferendis labore inventore. Cumque est placeat amet dolorem
+				blanditiis architecto hic adipisci quis fuga doloribus veritatis quidem voluptas suscipit
+				officia labore, inventore odit natus saepe, facere ad provident repellendus. Ducimus,
+				exercitationem quis.
+			</p>
+		</div>
+		<div id="heading-3">
+			<h2>Dummy text heading 3</h2>
+			<p>
+				lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus inventore reiciendis
+				ducimus nesciunt
+			</p>
+			<p>
+				dignissimos eaque molestiae vel maiores rerum delectus voluptatibus libero? Voluptate sequi
+				neque voluptates! Minus, reiciendis. Reprehenderit ex earum vero hic consequuntur sit
+				necessitatibus enim accusantium temporibus officia magni quia aspernatur
+			</p>
+			<p>
+				aperiam sunt at quasi? Perspiciatis, ut provident temporibus porro totam dolorem ipsum
+				voluptatum delectus perferendis minima. Blanditiis, quam eum atque ab sed aut unde assumenda
+				cupiditate porro aliquid beatae autem obcaecati dolor deleniti veniam natus. Ea, veritatis sit.
+				Quaerat laboriosam, cum eligendi <br /><br />
+				quod dicta architecto sequi, fugit doloribus consectetur earum dolorum, animi at molestias. Non
+				ad cum placeat id, incidunt officiis pariatur veritatis quibusdam laborum architecto molestiae
+				voluptas aut voluptatem qui itaque sapiente! Eum placeat voluptate nam quibusdam modi iste culpa
+				architecto amet impedit vel, quam corporis maiores rem ducimus excepturi soluta nisi voluptatum
+				iusto? Laudantium officia est obcaecati enim distinctio, nihil modi <br /><br />
+				doloribus veritatis! Rerum laboriosam ea nemo cupiditate et quisquam, sint eveniet accusamus
+				temporibus harum enim. Quibusdam laboriosam earum amet fugiat aut a, libero incidunt atque at,
+			</p>
+
+			<p>
+				ex aliquam neque fugit provident animi sit quis deleniti, esse dignissimos dolores hic nulla.
+				Officia, temporibus tempora eligendi aliquid dolore accusantium dolores labore hic, numquam,
+				odio vitae dolorum! Exercitationem quibusdam reiciendis facilis voluptates eligendi porro
+				fugiat, quidem repellendus <br /><br />
+				nam alias molestiae velit, accusamus earum aliquam blanditiis tempore deserunt architecto labore
+				eum ullam nihil culpa beatae libero eos! Repellendus officiis non omnis voluptatibus ipsa atque
+				enim aperiam iusto ipsum labore ipsam soluta nemo quae quo unde repudiandae, consectetur ratione
+			</p>
+			<p>
+				Rem veritatis maiores molestiae nulla distinctio animi eum eius similique unde adipisci
+				consectetur, sed, laudantium cupiditate commodi accusamus laboriosam sint eligendi ipsum impedit
+				magni, necessitatibus facere? Voluptate, alias?
+			</p>
+		</div>
+		<div id="heading-4">
+			<h2>Dummy text heading 4</h2>
+			<p>
+				Explicabo sapiente optio accusamus ipsum praesentium iusto ea quis fuga recusandae deserunt?
+				Assumenda porro reiciendis qui vitae velit tempora consectetur nemo, libero molestias cum omnis
+				deleniti commodi iusto dolorem suscipit veniam, repellat quo magnam laboriosam saepe, quos aut?
+				Asperiores molestias magni necessitatibus at tempore impedit, magnam et ex accusantium vero!
+			</p>
+			<p>
+				aperiam sunt at quasi? Perspiciatis, ut provident temporibus porro totam dolorem ipsum
+				voluptatum delectus perferendis minima. Blanditiis, quam eum atque ab sed aut unde assumenda
+				cupiditate porro aliquid beatae autem obcaecati dolor deleniti veniam natus. Ea, veritatis sit.
+				Quaerat laboriosam, cum eligendi <br /><br />
+				quod dicta architecto sequi, fugit doloribus consectetur earum dolorum, animi at molestias. Non
+				ad cum placeat id, incidunt officiis pariatur veritatis quibusdam laborum architecto molestiae
+				voluptas aut voluptatem qui itaque sapiente! Eum placeat voluptate nam quibusdam modi iste culpa
+				architecto amet impedit vel, quam corporis maiores rem ducimus excepturi soluta nisi voluptatum
+				iusto? Laudantium officia est obcaecati enim distinctio, nihil modi <br /><br />
+				doloribus veritatis! Rerum laboriosam ea nemo cupiditate et quisquam, sint eveniet accusamus
+				temporibus harum enim. Quibusdam laboriosam earum amet fugiat aut a, libero incidunt atque at,
+			</p>
+
+			<p>
+				iusto ipsum labore ipsam soluta nemo quae quo unde repudiandae, consectetur ratione nihil. Nemo
+				nihil non commodi quasi tempore officia assumenda nam impedit adipisci sequi quos qui iure
+				fugit, omnis modi minus asperiores tempora obcaecati possimus. Animi sapiente dolor
+				<br /><br />
+				maxime sed excepturi cum officiis nam id possimus beatae repellendus dignissimos, aut
+				voluptatibus eos, cumque, ut facilis veniam at! Soluta dignissimos ex ut facere, dolor id
+				reiciendis accusamus sapiente similique repellendus esse veritatis delectus, commodi ratione
+				laborum. Ea, laudantium pariatur nobis natus voluptate cum earum maiores! Aliquam itaque
+				<br /><br />
+				dolor sapiente, ab veritatis error illo rem cupiditate distinctio eius earum voluptatibus quo
+				quasi nam a incidunt! Eum, explicabo! Quam at, veniam neque veritatis exercitationem ex corrupti
+				dolores ut deserunt adipisci tenetur quod.
+			</p>
+		</div>
+		<div id="heading-5">
+			<h2>Dummy text heading 5</h2>
+			<p>
+				lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus inventore reiciendis
+				ducimus nesciunt
+			</p>
+			<p>
+				aperiam sunt at quasi? Perspiciatis, ut provident temporibus porro totam dolorem ipsum
+				voluptatum delectus perferendis minima. Blanditiis, quam eum atque ab sed aut unde assumenda
+				cupiditate porro aliquid beatae autem obcaecati dolor deleniti veniam natus. Ea, veritatis sit.
+				Quaerat laboriosam, cum eligendi <br /><br />
+				quod dicta architecto sequi, fugit doloribus consectetur earum dolorum, animi at molestias. Non
+				ad cum placeat id, incidunt officiis pariatur veritatis quibusdam laborum architecto molestiae
+				voluptas aut voluptatem qui itaque sapiente! Eum placeat voluptate nam quibusdam modi iste culpa
+				architecto amet impedit vel, quam corporis maiores rem ducimus excepturi soluta nisi voluptatum
+				iusto? Laudantium officia est obcaecati enim distinctio, nihil modi <br /><br />
+				doloribus veritatis! Rerum laboriosam ea nemo cupiditate et quisquam, sint eveniet accusamus
+				temporibus harum enim. Quibusdam laboriosam earum amet fugiat aut a, libero incidunt atque at,
+			</p>
+		</div>
+	</section>
+	<aside class="sidebar-right">
+		<ul>
+			<li>
+				<a href="#heading-1">Headeing 1</a>
+				<ul>
+					<li><a href="">Subheading 1.1</a></li>
+					<li><a href="">Subheading 1.2</a></li>
+					<li><a href="">Subheading 1.3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#heading-2">Headeing 2</a>
+				<ul>
+					<li><a href="">Subheading 2.1</a></li>
+					<li><a href="">Subheading 2.2</a></li>
+					<li><a href="">Subheading 2.3</a></li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+</main>
+<footer>
+	&COPY; 2020 | built with ♥️ by <a href="https://www.linkedin.com/in/saiefalemon">Saief Al Emon</a>
+</footer>
