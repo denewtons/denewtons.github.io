@@ -224,6 +224,9 @@
               float: right;
               padding: 20%;
             }
+            header #logo{
+              text-align: center;
+            }
             header #branding{
                 display: flex;
                 flex-direction: row;
@@ -239,19 +242,18 @@
                 margin: auto;
             }
             header .highlight, header .current a{
-                color: #ff6600;
-                font-weight: bold;
+                color: #ff0000;
+                font-weight: 400;
             }
-            header .bulge a{
-              color: #08147c;
-              font-weight: bold;
+            header .bulge1 a{
+              text-align: center;
+              min-width: 120px;
+              color: #06f706;
+              background-color: #030303;
+              font-weight: 300;
           }
-          header .bulge1 a{
-            color: #9900ff;
-            font-weight: bold;
-        }
             header a:hover{
-                color: #07f843;
+                color: #6c07df;
                 font-weight: bold;
             }
   #sidebar.fixed {
