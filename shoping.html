@@ -26,8 +26,11 @@ body {
         max-width: 90%;
     }
 }
+h1{
+    color: darkorange;
+}
 header {
-    border-bottom: 1px solid rgb(243, 243, 243);
+    border-bottom: 2px solid yellow;
 }
 header .container{
     display: flex;
@@ -35,8 +38,14 @@ header .container{
     padding: 15px 0;
 }
 a {
+    text-align: center;
     text-decoration: none;
-    color: inherit;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: indigo;
+    border-radius: 5%;
+    border: 1px solid red;
+    padding: 5px;
 }
 p {
      margin: 0.5rem;
@@ -47,25 +56,6 @@ p {
     font-size: 22px;
     font-weight: bold;
     line-height: 2rem;
-}
-.bag {
-    font-size: 28px;
-    position: relative;
-}
-.bag span {
-    display: block;
-    background: #E20000;
-    color: #fff;
-    width: 1.3rem;
-    height: 1.3rem;
-    text-align: center;
-    border-radius: 100%;
-    line-height: 1.3rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-    position: absolute;
-    right: -12px;
-    top: 19px;
 }
 @media(min-width:800px) {
     .cards {
@@ -80,7 +70,8 @@ p {
 
 .card {
     text-align: center;
-    border: solid #ccc 1px;
+    color: #ff3c00;
+    border: solid #2600ff 1px;
     border-radius: 20px;
     overflow: hidden;
     line-height: 1.5rem;
@@ -94,102 +85,24 @@ p {
     font-weight: 900;
     font-size: 26px;
 }
-.button {
-    border-radius: 50px;
-    display: block;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    height: 3rem;
-    width: 90%;
-    line-height: 3rem;
-    margin: auto;
-    transition: all .3s ease;
-}
-.button:hover {
-    background: #2c2c2c;
-}
-.cart {
-    width: 30%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    background: #fff;
-    box-shadow: 0px 0px 5px #d4d4d4;
-    font-size: 16px;
-    transition: all .5s ease;
-}
-.activo {
-    right: 0;
-}
-.cart #minicart {
-    padding: 1.3rem;
-}
-.cart #minicart .button {
-    margin-top: 2rem;
-}
-.cart table {
-    border-collapse: collapse;
-}
-.cart th, .cart td {
-    padding: 10px;
-    text-align: left;
-}
-.closecart {
-    font-size: 2rem;
-    position: absolute;
-    right: 10px;
-}
-.deletebtn {
-    display: block;
-    background: #E20000;
-    color: #fff;
-    width: 1.5rem;
-    height: 1.5rem;
-    text-align: center;
-    border-radius: 100%;
-    line-height: 1.5rem;
-    font-size: 0.8rem;
-    font-weight: bold;
+.logo{
+    width: auto;
+    height: auto;
+    background-image: url(https://photos.app.goo.gl/SReKEggjEfMDbd6G8);
 }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo"><img src="https://photos.app.goo.gl/SReKEggjEfMDbd6G8" alt=""></div>
-            <a href="#" class="bag">
-                <i class="fas fa-shopping-bag"></i></a>
-                <li class="current"><a href="index.html">Back to Home Page</a></li>
+            <div class="logo"></div>
+                <a href="index.html">Back to Home Page</a>
         </div>
     </header>
-    <div class="cart">
-        <a href="#" class="closecart"><i class="fas fa-times"></i></a>
-        <div id="minicart">                      
-            <table id="lista-carrito" class="u-full-width">
-                <thead>
-                    <tr>
-                        <th>Imagen</th>
-                        <th>Nombre</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-            <a href="#" id="vaciar-carrito" class="button u-full-width">
-                Clean Cart <i class="far fa-trash-alt"></i>
-            </a>
-        </div>
-    </div>
     <div class="cards container">
         <h1>COLLECT YUOR BEST AFFORDABLE CHOICES HERE.</h1>
         <div class="card">
             <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-            <p class="title"></p>
             <p class="description">Electronics.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
@@ -197,9 +110,7 @@ p {
         </div>
 
         <div class="card">
-            <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-            <p class="title"></p>
-            <p class="description">Clothing.</p>
+            <p class="description" style="background-image: url(https://images.app.goo.gl/jjgGKzGhzK1PTunU9);">Clothing.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
             </form>
@@ -207,7 +118,6 @@ p {
 
         <div class="card">
             <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-            <p class="title"></p>
             <p class="description">Foodstuffs.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
@@ -215,7 +125,6 @@ p {
         </div>
         <div class="card">
             <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-            <p class="title"></p>
             <p class="description">Foodstuffs.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
