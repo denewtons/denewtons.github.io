@@ -284,7 +284,7 @@
     width: 30%;
   }
   .happat{
-            width: 150%;
+            width: 100%;
             height: auto;
             position: absolute;
             padding:0.6%;
@@ -292,11 +292,13 @@
             flex-direction: row;
         }
         .wd{
-          max-width: 40%;
+          text-align: center;
+          position: fixed;
+          max-width: 22%;
           max-height: auto;
           background-color: indigo;
           opacity: 0.6;
-          padding: 55px;
+          padding: 1%;
         }
         .wd h1{
           text-align: center;
@@ -315,8 +317,12 @@
           margin: 10px auto;
           color:rgb(247, 247, 4);
         }
+        .wd p{
+          text-align: center;
+        }
 
      .wd2{
+       position: relative;
           max-width: 100%;
           max-height: auto;
           background-color: indigo;
@@ -360,7 +366,7 @@
              }
              footer h2{
                text-transform: capitalize;
-                 color: gold;
+                 color: rgb(0, 47, 255);
                  padding: 0.5%;
                  text-align: center;   
              }
@@ -410,7 +416,3 @@
               border-radius: 20%;
 
             }
-  #footer {
-    clear: both;
-    margin: 10px 0;
-  }
