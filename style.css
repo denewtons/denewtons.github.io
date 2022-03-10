@@ -22,9 +22,10 @@
             border-bottom:1px hsl(59, 100%, 50%) solid; 
         }
         :root {
-          --light: #ffffff;
-          --dark: #110b01;
-          --medium: #2cfa02;
+          --primary: #436343;
+          --light: #f7e9d8;
+          --dark: #1d1200;
+          --medium: #7f6663;
           --main-border-radius: 12px;
         }
         .button {
