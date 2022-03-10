@@ -2,7 +2,6 @@
   body{
      font: 15px/1.5 arial, helvetica, sans-serif; 
               padding: 0;
-              color: rgb(240, 128, 147);
               margin: 0;
               background-image: inherit;
               background-image: initial;
@@ -13,56 +12,124 @@
               font-family: sans-serif;
       } 
           header{
-              background-color: hwb(0 99% 0%);
+            background-color: white;
             position:sticky;
             color: hsl(0, 0%, 5%);
             padding-top: 5px;
             padding-bottom: 5px;
-            min-height: 40px;
+            min-height: 30px;
             height: 100%;
-            width: 100%;
             border-bottom:1px hsl(59, 100%, 50%) solid; 
         }
-        header a{
-            text-decoration: none;
+        :root {
+          --light: #ffffff;
+          --dark: #110b01;
+          --medium: #2cfa02;
+          --main-border-radius: 12px;
+        }
+        .button {
+          padding: 0.5rem 1rem;
+          border-radius: var(--main-border-radius);
+          width: max-content;
+          text-transform: capitalize;
+          font-variant: small-caps;
+          text-decoration: none;
+          transition: all 0.5s ease-in-out;
+        }
+        .button-main {
+          background-color: var(--light);
+          color: var(--dark);
+          border: solid var(--dark);
+          border-width: 1px 3px 1px 3px;
+        }
+        .button-main:hover,
+        a.button-main:hover {
+          background-color: var(--medium);
+          color: var(--light);
+          border: solid var(--light);
+          border-width: 1px 3px 1px 3px;
+        }
+        /* nav menu  */
+        nav {
+          padding: 0.75rem 1rem;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+        nav .lang {
+          margin-left: 1.5rem;
+        }
+        nav .button {
+          padding: 0.35rem 0.75rem;
+          border-radius: var(--main-border-radius);
+        }
+        nav .button.active {
+          background-color: var(--medium);
+          color: var(--light);
+        }
+        nav .button.active:hover,
+        nav .button.active:focus,
+        nav .button.active:visited {
+          background-color: var(--medium);
+          color: var(--light);
+        }
+        nav .nav-logo {
+          margin-right: auto;
+        }
+        nav .nav-logo img {
+          max-width: 85px;
+        }
+        .navbar-toggler {
+          display: none;
+        }
+        #navigation {
+          margin-right: 45px;
+        }
+        @media all and (max-width: 800px) {
+          .navbar-toggler {
+            display: initial;
+            cursor: pointer;
+            padding: 0.5rem 1.25rem;
+            font-size: 1.35rem;
+            /* margin-right: auto; */
+            position: absolute;
+            top: 12px;
+            left: 50%;
+            transform: translate(-50%);
+          }
+          #navigation.show {
+            display: flex;
+            margin-right: 0;
+          }
+          #navigation {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 65px;
+            align-items: center;
+            gap: 0.25rem;
+            background: rgba(67, 99, 67, 0.95);
+            padding: 1rem;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid var(--primary);
+          }
+          #navigation .button {
             text-align: center;
-            font-size: 20px;
+            border: none;
+            background: transparent;
+            color: var(--light);
+            font-size: 1.2rem;
+            transition: none;
+          }
+          #navigation .button.active,
+          #navigation .button:hover {
+            background-color: var(--light);
+            color: var(--dark);
+            border-radius: 0;
             width: 100%;
-            border-radius: 10px;
-        }
-        header li{
-           display: flex;
-           flex-direction: row;
-           padding: 12px;
-        }
-        header h5{
-          float: right;
-          padding: 5%;
-        }
-        header #logo{
-          text-align: center;
-        }
-        header #branding{
-            display: flex;
-            flex-direction: row;
-            margin: 0%;
-        }
-        header #branding h1{
-            margin: 0;
-       }
-        
-        header nav{
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-        }
-        header .highlight {
-            color: red;
-            font-weight: 500;
-        }
-        header a:hover{
-            color: #6c07df;
-            font-weight: bold;
+            transition: none;
+          }
         }
         a{
             text-decoration: none;

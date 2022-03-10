@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pieinvestment.co.ke</title>
     <link rel="stylesheet" href="style.css">
+   <script>
+       function mobileToggle() {
+    var element = document.getElementById("navigation");
+    element.classList.toggle("show");
+  }
+ 
+   </script>
 </head>
 <body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoX4qTBZwMClilsdKs6cXXEquU-Hm-MfQIA&usqp=CAU);">   
     <header>
-            <div class="container">
-                <div id="logo"><img src="https://photos.app.goo.gl/yDMHwQtNDZJ5gps96" alt=""></div>
-                <div id="branding">
-                    <h1><b class="highlight">Pie</b>  Investment</h1>
-                    <nav>
-                        
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li class="current"><a href="#href">Services</a></li> 
-                                 
-                    </nav>
-                </div>
-            </div>  
-        </div>
+        <nav>
+            <a href="#" class="nav-logo">
+              <img src="https://lh3.googleusercontent.com/mhaOnWjXkmkzVVYjumTZqDt61lWEJRO1bdrie9kUIgPUOxCJYdOtUCqHv2Np_80BUx3lFbBkgaYrPAXtkmWsmhXQ_qaZd5mIgEaldjm0pTbM1-78qE__llc41c5Nbcu0RuZEpo8e18AjHQ8fyPEVTiSC2z9gF5RyP65qodSK-WVKDya8R04RmGxdcQ1-5ob_-BgPjpbY_SN-jYt3PCV_nuuxQiOzJ7hUt0g3Y2AQQwkGjSvZqJ3biRVWKzwsNbglBS1EdpRS-ya3GBj_umZB4wyvDj42JT_1OiXS6yJ1CkpInnroHqxvg6S150D-mCHeatSlOVg0XIjmfA1llA8-k4C17fhZ-b8vpUei1ECs8MHQahcFEmvqrGfKqioAXIIe51Mh44iFoqVO6gjn2Rl69lmwoHdCFGHpgBBl2s9NTiw4H3SAdfNK9fnQ-9r3_Nv_xMrdzyuT_A4JYD_f1BxRoo1qZ4qlpupHFOdhEaX2EltbmERTlJDVzEEiLFZHYp-FEWJWiNwsAPstMLxHgJtcjEyZyW6mo8i6vAaO03Nb87IK800L2-sBtchlLmUnMtYCpCvLUibR7N_BWuz7CFgvWIsYI3fHpYYT5W8FmWyTsDRGzIHZILr43Be1Zcpqw88ZJM--3ZW77G5JH6eqoEhe86RI5jr55QH1dvHCqz3wsLzApmz1e8dihwcadRyeF9ARdtfjRIxPhHIQZVyENiMRR1k=w308-h271-no?authuser=0" alt="Logo">
+            </a>
+            <div class="navbar" id="navigation">
+              <a href="index.html" class="button button-main active">Home</a>
+              <a href="#href" class="button button-main ">Services</a>
+              <a href="login.html" class="button button-main ">Invest</a>
+            </div>
+          
+            <div class="navbar-toggler" onclick="mobileToggle()">
+              <i class="fas fa-bars"></i>
+            </div>
+          
+          </nav>
     </header>
     <section id="format">
         <div id="sidebarWrap">
