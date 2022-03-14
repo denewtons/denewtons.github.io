@@ -22,6 +22,7 @@
             </a>
             <div class="navbar" id="navigation">
               <a href="index.html" class="button button-main active">Home</a>
+              <a href="#about" class="button button-main ">More</a>
               <a href="#href" class="button button-main ">Services</a>
               <a href="login.html" class="button button-main ">Invest</a>
             </div>
@@ -47,9 +48,6 @@
     <div id="content">
         <div class="project">
              <div class="dropdown">
-                <button class="dropbtn"><a href="register.html">Invest Now.</a></button>
-              </div>
-             <div class="dropdown">
                <button class="dropbtn">Watch Our live projects</button>
                <div class="dropdown-content">
                    <a href="https://youtu.be/YDcakKDJWv0"><h3>Amaizing agriculture.</h3></a>
@@ -70,18 +68,42 @@
     </div>
 </section>
 <footer>
-    <div id="footer">
-             <h2>Our Services.</h2><br>
-        <div id="href">
-            <div><p>We borrow Loans from our trusted customers.</p></div>
-            <div><p>We Do projects for our customers.</p></div>
-            <div><p>We offer smart business planning and ideas.</p></div>
-            <div><p>land tenancy, lease and purchace.</p></div>
-            <div><p>We give out loans to only aproved customers.</p></div> 
-            <div><p>We surport the the Edwards school of international inteligence.</p></div>
-            
-    </div>
-    </div>
+  <div id="about">
+    <button onclick="myFunc()">More About Us</button>  
+    <div id="myDIV">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quaerat cumque consequatur quos commodi placeat maiores incidunt et. Earum maiores, deleniti reiciendis labore dignissimos voluptatibus velit corporis aliquam sit ducimus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quaerat cumque consequatur quos commodi placeat maiores incidunt et. Earum maiores, deleniti reiciendis labore dignissimos voluptatibus velit corporis aliquam sit ducimus.</p>
+    </div>   
+   <script>  
+        function myFunc() {  
+            document.getElementById("myDIV").style.visibility = "visible";  
+        }  
+        </script> 
+ </div>
+<div id="services">
+    <button onclick="myFunction()">Our Services</button>  
+    <div id="myDIV1">
+      <h2>Our Services.</h2><br>
+      <div id="href">
+          <p>We borrow Loans from our trusted customers.</p>
+          <p>We Do projects for our customers.</p>
+          <p>We offer smart business planning and ideas.</p>
+          <p>land tenancy, lease and purchace.</p>
+          <p>We give out loans to only aproved customers.</p>
+          <p>We surport the the Edwards school of international inteligence.</p>
+          <div class="tooltip"><strong>More</strong>  
+            <span class="tooltiptext"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore nam asperiores voluptates magnam in ex quas numquam fuga delectus, molestias eum aspernatur sapiente totam quia blanditiis unde perferendis suscipit!</p></span>  
+            <span class="tooltiptext"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore nam asperiores voluptates magnam in ex quas numquam fuga delectus, molestias eum aspernatur sapiente totam quia blanditiis unde perferendis suscipit!</p></span>  
+            <span class="tooltiptext"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, labore nam asperiores voluptates magnam in ex quas numquam fuga delectus, molestias eum aspernatur sapiente totam quia blanditiis unde perferendis suscipit!</p></span>  
+          </div>
+      </div>
+    </div>   
+   <script>  
+        function myFunction() {  
+            document.getElementById("myDIV1").style.visibility = "visible"; 
+        }  
+        </script> 
+</div>
 </footer>
 </body>
 </html>

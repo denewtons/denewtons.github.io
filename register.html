@@ -2,42 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
+    <link rel="stylesheet" href="style.css">
     <title>pieinvestmentsignup</title>
-    <style>
-        body{ 
-            font: 14px sans-serif;
-         }
-        .wrapper{
-             width: 360px; padding: 20px; 
-        }
-    </style>
 </head>
 <body>
+    <center>
     <div class="wrapper">
-        <h2>Create An Account.</h2>
-        <form action="index.html" method="post">
+       
+        <form action="payment.html">
+            <h2>Create An Account.</h2>
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="">
+                <label>Phone Number:</label><br>
+                <input type="integer" name="phoneNumber" placeholder="M-Pesa phone number" required>
+            </div>
+            <div class="form-group">
+               <label>Username:</label><br>
+                <input type="text" name="username" placeholder="Username"  required>
                 </div>
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" value="">
+                <label>Password:</label><br>
+                <input type="password" name="password" placeholder="password" required>
                 <span class="invalid-feedback"></span>
             </div>
             <div class="form-group">
-                <label>Confirm Password</label>
-                <input type="password" name="passcon" class="form-control " value="">
+                <label>Confirm Password:</label><br>
+                <input type="password" name="passcon" placeholder="confirm password" required>
                 <span class="invalid-feedback"></span>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
-            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+            <p>Already have an account? <a href="login.html">Login</a>.</p>
         </form>
-    </div>    
+    </div>  
+</center>  
 </body>
 </html>

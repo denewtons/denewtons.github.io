@@ -181,6 +181,12 @@
     display: flex;
     flex-direction: row;
 }
+form{
+background-color: rgb(48, 89, 117);
+padding: 10px;
+max-width: max-content;
+width: 100%;
+}
 
         .wd{
             color: #0483fa;
@@ -252,25 +258,52 @@
               display: block;
             } 
             footer{
-                display: flex;
-                flex-direction: row;
-                 border-top:1px #ffca1c solid;
-                 color: white;
-                 background-color: rgb(176, 176, 177);
-                 min-height: 50%;
-             }
-             footer h2{
-               text-transform: capitalize;
-                 color: white;
-                 padding: 0.5%;
-             }
-             footer #href{
-                 width:40%;
-                 display: flex;
-                 flex-direction: row;
-             }
-             footer #href p{
-                 color: black;
-                 padding: 10px;
-                text-align: left;
-             }
+              color: white;
+              display: flex;
+              background-color: rgb(30, 30, 31);
+              height: 100%;
+          }
+          footer #services{
+              padding: 3%;
+              width: 40%;
+          }
+          footer #about{
+              padding: 3%;
+              width: 40%;
+          }
+          #myDIV {  
+              visibility: hidden;
+              padding: 3%;
+              max-width: 100%; 
+              color: #ffffff;  
+              counter-reset: initial;
+          }
+          #myDIV1 {  
+              visibility: hidden;
+              padding: 3%;
+              max-width: 100%;  
+              color: #ffffff;  
+          }
+        .tooltip {
+            color: red;
+            position: relative;  
+            display: inline-block;  
+            border-bottom: 1px dotted black;  
+        }  
+        .tooltip .tooltiptext {  
+            visibility: hidden;  
+            width: 300px;  
+            background-color: indigo;  
+            color: #ffffff;  
+            text-align: center;  
+            border-radius: 6px;  
+            padding: 5px 0;  
+            position: absolute;  
+            z-index: 1;  
+            bottom: 100%;  
+            left: 50%;  
+            margin-left: -60px;  
+        }  
+        .tooltip:hover .tooltiptext {  
+            visibility: visible;  
+        } 
