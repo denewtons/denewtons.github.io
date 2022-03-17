@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,6 +13,7 @@
         <label>Password:</label>
         <input type="password" name="pass"><br> 
         <input type="submit" name="submit" value= "Login"><br>
+        <h4>Have no account: <a href="register.php">Sign Up</a></h4>
      </form>
 </body>
 </html>

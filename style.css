@@ -16,7 +16,7 @@
     --normal-ff:'Open Sans', sans-serif;
     --header-ff:'Poppins', sans-serif;
     --basic-fc:#fff;
-    --accent-c:#0c430c;
+    --accent-c:#4cf84c;
 
 }
 html {
@@ -230,6 +230,9 @@ button {
 .form__elements textarea {
     min-height: 3.4375rem;
 }
+.form{
+    background-color: aqua;
+}
 .query--form{
     max-width: 52.9375rem;
     width: 50%;
@@ -295,11 +298,11 @@ button {
 .details__text {
     font-size: .75rem;
 }
-
 .footer {
     background-color: var(--accent-c);
     padding: 3rem 0;
 }
+
 .footer__brand {
     justify-content: flex-start;
     align-items: center;
@@ -380,6 +383,7 @@ button {
         
         font-size: 1rem;
     }
+    
 
 }
 @media (min-width:56.3125rem) {
@@ -387,313 +391,3 @@ button {
         display: flex;
     }
 }
-/*@import url("https://images.app.goo.gl/tPxZ4jWoWMww8CfK9");
-  body{
-     font: 15px/1.5 arial, helvetica, sans-serif; 
-              padding: 0;
-              margin: 0;
-              background-color: #ffffff;
-              background-image: inherit;
-              background-image: initial;
-              background-image: revert;
-              font-size:20px;
-              background-size: cover;
-              margin: auto;
-              font-family: sans-serif;
-      } 
-          header{
-            background-color: white;
-            position:sticky;
-            color: hsl(0, 0%, 5%);
-            padding-top: 5px;
-            padding-bottom: 5px;
-            min-height: 30px;
-            height: 100%;
-            border-bottom:1px hsl(59, 100%, 50%) solid; 
-        }
-        :root {
-          --primary: #436343;
-          --light: #f7e9d8;
-          --dark: #1d1200;
-          --medium: #7f6663;
-          --main-border-radius: 12px;
-        }
-        .button {
-          padding: 0.5rem 1rem;
-          border-radius: var(--main-border-radius);
-          width: max-content;
-          text-transform: capitalize;
-          font-variant: small-caps;
-          text-decoration: none;
-          transition: all 0.5s ease-in-out;
-        }
-        .button-main {
-          background-color: var(--light);
-          color: var(--dark);
-          border: solid var(--dark);
-          border-width: 1px 3px 1px 3px;
-        }
-        .button-main:hover,
-        a.button-main:hover {
-          background-color: var(--medium);
-          color: var(--light);
-          border: solid var(--light);
-          border-width: 1px 3px 1px 3px;
-        }
-        /* nav menu  */
-        nav {
-          padding: 0.75rem 1rem;
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-        }
-        nav .lang {
-          margin-left: 1.5rem;
-        }
-        nav .button {
-          padding: 0.35rem 0.75rem;
-          border-radius: var(--main-border-radius);
-        }
-        nav .button.active {
-          background-color: var(--medium);
-          color: var(--light);
-        }
-        nav .button.active:hover,
-        nav .button.active:focus,
-        nav .button.active:visited {
-          background-color: var(--medium);
-          color: var(--light);
-        }
-        nav .nav-logo {
-          margin-right: auto;
-        }
-        nav .nav-logo img {
-          max-width: 45px;
-        }
-        .navbar-toggler {
-          display: none;
-        }
-        #navigation {
-          margin-right: 45px;
-        }
-        @media all and (max-width: 800px) {
-          .navbar-toggler {
-            display: initial;
-            cursor: pointer;
-            padding: 0.5rem 1.25rem;
-            font-size: 1.35rem;
-            /* margin-right: auto; */
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            transform: translate(-50%);
-          }
-          #navigation.show {
-            display: flex;
-            margin-right: 0;
-          }
-          #navigation {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 65px;
-            align-items: center;
-            gap: 0.25rem;
-            background: rgba(67, 99, 67, 0.95);
-            padding: 1rem;
-            left: 0;
-            right: 0;
-            border-bottom: 1px solid var(--primary);
-          }
-          #navigation .button {
-            text-align: center;
-            border: none;
-            background: transparent;
-            color: var(--light);
-            font-size: 1.2rem;
-            transition: none;
-          }
-          #navigation .button.active,
-          #navigation .button:hover {
-            background-color: var(--light);
-            color: var(--dark);
-            border-radius: 0;
-            width: 100%;
-            transition: none;
-          }
-        }
-        a{
-            text-decoration: none;
-        }                
-        label {
-          color: white;
-          margin-bottom: 2px;
-        }
-        
-        .input-container {
-          position: relative;
-        }
-        
-        .input-container input {
-          padding-right: 1%;
-        }   
-  #sidebarWrap {
-    height: auto;
-    width: 400px;
-    box-shadow: none;
-    border: none;
-    margin: 0;
-    padding: 10px;
-  }
-  .dark{
-    color:#000000;           
-}#format{
-    display: flex;
-    flex-direction: row;
-  }
-  #part1{
-      padding-bottom: 10px;
-      display: flex;
-      flex-direction: row;
-  }
-  #make{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-  }
-  #content {
-    width: 50%;
-    padding: auto;
-    display: flex;
-  flex-direction: column;
-}
-.project{
-    display: flex;
-    flex-direction: row;
-}
-form{
-background-color: rgb(48, 89, 117);
-padding: 10px;
-max-width: max-content;
-width: 100%;
-}
-
-        .wd{
-            color: #0483fa;
-          text-align: center;
-          max-width: 320px;
-          width: 100%;
-          max-height: auto;
-          padding: 1%;
-        }
-        .wd h1{
-            padding: 10px;
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: 250px;
-        }
-        .wd h4{
-          text-align: center;
-          font-weight: 100px;
-        }
-        .wd h2{
-          text-align: center;
-          font-weight: 200px;
-          margin: 10px auto;
-        }
-        .wd p{
-          text-align: center;
-        }
-        form, input[type="button"] {
-            font-weight: 500%;
-            }
-             .dropbtn {
-              background-color: rgb(164, 228, 15);
-              color: #000000;
-              padding: 20px;
-              font-size: 16px;
-              cursor: pointer;
-              text-align: center;
-            }
-            .dropdown {
-                border: none;
-                padding-left: 30px;
-            padding-top: 100px;
-            padding-bottom: 50px;
-              color: black;
-              display: inline-block;
-              text-align:center;
-            }
-            .dropdown-content {
-              text-align: center;
-              display: none;
-              position: absolute;
-              background-color: #fcf9f9;
-              width: 25%;
-              box-shadow: 0px 8px 16px 0px rgba(92, 91, 91, 0.925);
-              z-index: 1;
-            }
-            .dropdown-content a {
-                font-size: small;
-              text-align: center;
-              color: rgb(0, 0, 0);
-              padding: 5px 5px;
-              text-decoration: none;
-              display: block;
-            }
-            .dropdown-content a:hover {
-              background-color: rgb(219, 217, 212);
-            }
-            .dropdown:hover .dropdown-content {
-              display: block;
-            } 
-            footer{
-              color: white;
-              display: flex;
-              background-color: rgb(30, 30, 31);
-              height: 100%;
-          }
-          footer #services{
-              padding: 3%;
-              width: 40%;
-          }
-          footer #about{
-              padding: 3%;
-              width: 40%;
-          }
-          #myDIV {  
-              visibility: hidden;
-              padding: 3%;
-              max-width: 100%; 
-              color: #ffffff;  
-              counter-reset: initial;
-          }
-          #myDIV1 {  
-              visibility: hidden;
-              padding: 3%;
-              max-width: 100%;  
-              color: #ffffff;  
-          }
-        .tooltip {
-            color: red;
-            position: relative;  
-            display: inline-block;  
-            border-bottom: 1px dotted black;  
-        }  
-        .tooltip .tooltiptext {  
-            visibility: hidden;  
-            width: 300px;  
-            background-color: indigo;  
-            color: #ffffff;  
-            text-align: center;  
-            border-radius: 6px;  
-            padding: 5px 0;  
-            position: absolute;  
-            z-index: 1;  
-            bottom: 100%;  
-            left: 50%;  
-            margin-left: -60px;  
-        }  
-        .tooltip:hover .tooltiptext {  
-            visibility: visible;  
-        } 
