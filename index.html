@@ -3,47 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Vineo, initial-scale=1.0">
-    <title>VINEO STORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <script src="store.js" async></script>
+    <link rel="shortcut icon" href="Favcon.png" type="image/x-icon">
+    <title>pieinvestment</title>
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-nav nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="store.html">store</a></li>
-                <li><a href="#about">about</a></li>
-            </ul>
-            
-        </nav>
-        <h1 class="band-name band-name-large">The VINEO's</h1>
-    </header>
-    <section class="container content-section">
-        <h2 class="section-header">MUSIC</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Album 1</span>
-                <img class="shop-item-image" src="" alt="">
-
-                <div class="shop-item-details">
-                    <span sop-item-price>$12.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Album 2</span>
-                <img class="shop-item-image" src="" alt="">
-
-                <div class="shop-item-details">
-                    <span sop-item-price>$14.99</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-
-        </div>
-    </section>
     
+    <header class="header">
+
+        
+        <nav class="nav--bar flex">
+            <div class="container flex">
+                <div class="nav--bar__brand">
+                    <a href="index.html">
+                        <img src="fav.png" alt="Expert Farmers Brand" class="nav--bar__img">
+                    </a>
+                    
+                </div>
+    
+                <div class="nav--bar__nav">
+                    <ul class="nav--bar__items flex">
+                        <li class="nav--bar__item"><a href="/home.html" class="nav--bar__link">Home</a></li>
+                        <li class="nav--bar__item"><a href="#abt" class="nav--bar__link">About</a></li>
+                        <li class="nav--bar__item"><a href="#services" class="nav--bar__link">Search</a></li>
+                        <li class="nav--bar__item"><a href="#" class="nav--bar__link">Products</a></li>
+                    </ul>
+    
+                    <button class="nav--bar__close" id="menuClose">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </div>
+                <button class="nav--bar__toggle" id="menuOpen">
+                    <i class='bx bxs-grid-alt'></i>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <main class="main">
+
+        <div class="form" id="loginForm">
+
+            <form action="checklogin.php" class="login__form">
+                <div class="form__elements flex">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    <span class="error"></span>
+                </div>
+                <div class="form__elements flex">
+                    <label for="username">Password</label>
+                    <input type="text" id="password">
+                    <span class="error"></span>
+                </div>
+                <div class="form__elements flex">
+                    <button class="btn btn-submit">Login</button>
+                </div>
+            </form>
+            <button class="form--close login--close" id="formClose">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+
+        <div class="form" id="regForm">
+
+            <form action="connection.php" class="register__form">
+                <div class="form__elements flex">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    <span class="error"></span>
+                </div>
+                <div class="form__elements flex">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <span class="error"></span>
+                </div>
+                <div class="form__elements flex">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2">
+                    <span class="error"></span>
+                </div>
+                <div class="form__elements flex">
+                    <button class="btn btn-submit">Register</button>
+                </div>
+            </form>
+            <button class="form--close reg--close" id="formClose">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+
+
+        <section class="hero">
+            <div class="container flex">
+                <div class="hero__details flex">
+                    <h1 class="hero__title title">
+                        pie investment
+                    </h1>
+                    <h1> Welcome to pie investment</h1>
+               <h4> <i>Be an Invisible Business Person, Under The Best Investment Training Membership.</i></h4>
+               <h1>Pie Investment, always on your back.</h1>
+               <p>Learn investment as you earn.<br> How do you feel being charged no tax?.
+                  <br><i> Know Investors deepest secret.</i>.
+               </p>
+                <a href="#" class="btn" id="loginFormToggle">log in</a>
+                    <a href="#" class="btn" id="regFormToggle">Register</a>
+                </div>
+                <div class="hero__img">
+                    <img src="spinach-3368254.jpg" alt="spinach">
+                </div>
+            </div>
+        </section>
+
+        <section class="show--case">
+
+            <div class="container">
+                <h2 class="show--case__title title">Instant Invetment in the following areas.</h2>
+
+                <div class="flex cases">
+                    <div class="show--case__plant">
+                        <img src="kuku.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Farming.</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="cabbage-2633033.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Loans.</h3>
+                            <p class="details__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="coffee-grains-1474601.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Project Purchase offers.</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="coffee-grains-1474601.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Construction Egineering..</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p id="abt"><h1>About Us</h1></p> 
+            <div class="container flex">
+            
+                <p >We are a non-governmental organization founded by six members, with our CEO and Headquarters in kisumu city..............(location direction).
+                  <br>we've got our branches in Nakuru, Nairobi, Nyeri and Migori, and a sub-branch in Muhoroni.
+                </p>
+                <p>No risk, no rewar is our policy. Training under best investment knowledge plans is important. <br>Most people fear to install, set or up a business entreprice.</p>
+                <p><b>And because of this,</b><br>Pie investment founded a risk but sure reward plan and updated this platform that all who fear to set up something of profitable monetory return, may afford in its cheapest way.</p>
+                <p>We have calculated all your possible failures and are ready to sort you out fully</p>
+                <h3><b>Test us and see yourself rise in an unbelievable-sure economic level.</b></h3>
+                
+                </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="container flex">
+
+            <div class="footer__brand flex">
+                <img src="fav.png" alt="Expert Farmer brand" class="footer__img">
+                <p>Pie Investment Inc</p>
+            </div>
+            <ul class="footer__nav flex">
+                <li>+254-011-511-6968</li>
+                <li>@pieivestment.co.ke</li>
+                <li>Kisumu Megacity First Floor.</li>
+            </ul>
+                
+                <div class="footer__details">
+                <div class="footer__socials">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

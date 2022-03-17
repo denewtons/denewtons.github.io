@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <title>Expert Farmers</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        
+        <nav class="nav--bar flex">
+            <div class="container flex">
+                <div class="nav--bar__brand">
+                    <a href="index.html">
+                        <img src="fav.png" alt="Expert Farmers Brand" class="nav--bar__img">
+                    </a>
+                    
+                    
+                </div>
+    
+                <div class="nav--bar__nav">
+                    <ul class="nav--bar__items flex">
+                        <li class="nav--bar__item"><a href="home.html" class="nav--bar__link">Home</a></li>
+                        <li class="nav--bar__item"><a href="#showCase" class="nav--bar__link">About</a></li>
+                        <li class="nav--bar__item"><a href="home.html" class="nav--bar__link">Search</a></li>
+                        <li class="nav--bar__item"><a href="#showCase" class="nav--bar__link">Products</a></li>
+                    </ul>
+    
+                    <button class="nav--bar__close" id="menuClose">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </div>
+                <button class="nav--bar__toggle" id="menuOpen">
+                    <i class='bx bxs-grid-alt'></i>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <main class="main">
+        <div class="form query--form">
+            <div class="container flex">
+                <div class="query_form">
+                    <form action="#">
+                        <div class="form__elements flex">
+                            <label for="cropname">Crop Name</label>
+                            <input type="text" id="cropname">
+                            <span class="error"></span>
+                        </div>
+                        <div class="form__elements flex">
+                            <label for="age">Crop Age(weeks)</label>
+                            <input type="number" id="age">
+                            <span class="error"></span>
+                        </div>
+                        <div class="form__elements flex">
+                            <label for="symptoms">Symptoms</label>
+                            <textarea name="" id="symptoms" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form__elements flex">
+                            <button class="btn btn-submit" id="searchBtn">Search</button>
+                        </div>
+                    </form>
+                    <button class="form--close query--close" id="formClose">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </div>
+                <div class="query__details">
+                    
+                    <div class="crop__details flex">
+                        <h3 class="title btn--flex"><i class='bx bxs-leaf'></i> Crop Name: </h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="symptoms">
+                        <h3 class="title btn--flex"><i class='bx bxs-virus'></i>Symptoms</h3>
+                        <div class="spacer">
+                            <ul>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="disease">
+                        <h3 class="title">Disease found</h3>
+                        <div class="spacer">
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="treatment">
+                        <h3 class="title">Treatment</h3>
+                        <div class="spacer">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, nesciunt?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="hero" id="hero">
+            <div class="container flex">
+                <div class="hero__details flex">
+                    <h1 class="hero__title title">
+                        expert farmers
+                    </h1>
+                    <p class="hero__text">your online farming partner.You got questions, we got the answers</p>
+                    <a href="#" class="btn" id="queryBtn">Query</a>
+                </div>
+                <div class="hero__img">
+                    <img src="spinach-3368254.jpg" alt="spinach">
+                </div>
+            </div>
+        </section>
+
+        <section class="show--case" id="showCase">
+
+            <div class="container">
+                <h2 class="show--case__title title">Farming Now</h2>
+
+                <div class="flex cases">
+                    <div class="show--case__plant">
+                        <img src="kuku.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Lorem, ipsum.</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="cabbage-2633033.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Lorem, ipsum dolor.</h3>
+                            <p class="details__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="coffee-grains-1474601.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Lorem, ipsum dolor.</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="container flex">
+
+            <div class="footer__brand flex">
+                <img src="fav.png" alt="Expert Farmer brand" class="footer__img">
+                <p>Expert Farmers Inc</p>
+            </div>
+            <ul class="footer__nav flex">
+                <li>FarmCo Kenya</li>
+                <li>Twiga Lick</li>
+                <li>Mkulima</li>
+            </ul>
+            <ul class="footer__nav flex">
+                <li>011-2322-435-343</li>
+                <li>experFarmers@info.co.ke</li>
+                <li>Third Street Nairobi</li>
+            </ul>
+            
+
+            <div class="footer__details">
+                <p class="footer__text">Your online Farming Partner</p>
+
+                <div class="footer__socials">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

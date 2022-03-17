@@ -230,9 +230,6 @@ button {
 .form__elements textarea {
     min-height: 3.4375rem;
 }
-.form{
-    background-color: aqua;
-}
 .query--form{
     max-width: 52.9375rem;
     width: 50%;

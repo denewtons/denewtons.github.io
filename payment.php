@@ -6,6 +6,7 @@
 </head>
 <body>
     <center>
+        
     <form action="">
         <h3>Select Amount to invest.</h3>
             <select name="amount" id="amount" size="1" required>
@@ -32,6 +33,7 @@
             <p>Reply to Mpesa popup.<br>Input M-pesa pin <br> to complete payment.<p>
          
       </form>
+    
 </center>
 </body>
 </html>
