@@ -15,24 +15,37 @@
    </script>
 </head>
 <body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoX4qTBZwMClilsdKs6cXXEquU-Hm-MfQIA&usqp=CAU);">   
-    <header>
-        <nav>
-            <a href="#" class="nav-logo">
-              <img src="https://photos.google.com/photo/AF1QipOp6uarvHH2kjj5bwq69FMsXe9AnZ5UnrkIJr88" alt="Logo">
-            </a>
-            <div class="navbar" id="navigation">
-              <a href="index.html" class="button button-main active">Home</a>
-              <a href="#about" class="button button-main ">More</a>
-              <a href="#href" class="button button-main ">Services</a>
-              <a href="login.html" class="button button-main ">Invest</a>
+  <header class="header">
+
+        
+    <nav class="nav--bar flex">
+        <div class="container flex">
+            <div class="nav--bar__brand">
+                <a href="index.html">
+                    <img src="fav.png" alt="Expert Farmers Brand" class="nav--bar__img">
+                </a>
+                
             </div>
-          
-            <div class="navbar-toggler" onclick="mobileToggle()">
-              <i class="fas fa-bars"></i>
+
+            <div class="nav--bar__nav">
+                <ul class="nav--bar__items flex">
+                    <li class="nav--bar__item"><a href="/home.html" class="nav--bar__link">Home</a></li>
+                    <li class="nav--bar__item"><a href="#" class="nav--bar__link">About</a></li>
+                    <li class="nav--bar__item"><a href="#" class="nav--bar__link">Search</a></li>
+                    <li class="nav--bar__item"><a href="#" class="nav--bar__link">Products</a></li>
+                </ul>
+
+                <button class="nav--bar__close" id="menuClose">
+                    <i class='bx bx-x'></i>
+                </button>
             </div>
-          
-          </nav>
-    </header>
+            <button class="nav--bar__toggle" id="menuOpen">
+                <i class='bx bxs-grid-alt'></i>
+            </button>
+        </div>
+    </nav>
+
+</header>
     <section id="format">
         <div id="sidebarWrap">
                   <div class="wd">
