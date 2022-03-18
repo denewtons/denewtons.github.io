@@ -27,9 +27,7 @@
                 <div class="nav--bar__nav">
                     <ul class="nav--bar__items flex">
                         <li class="nav--bar__item"><a href="home.html" class="nav--bar__link">Home</a></li>
-                        <li class="nav--bar__item"><a href="#showCase" class="nav--bar__link">About</a></li>
-                        <li class="nav--bar__item"><a href="home.html" class="nav--bar__link">Search</a></li>
-                        <li class="nav--bar__item"><a href="#showCase" class="nav--bar__link">Products</a></li>
+                        
                     </ul>
     
                     <button class="nav--bar__close" id="menuClose">
@@ -47,59 +45,29 @@
         <div class="form query--form">
             <div class="container flex">
                 <div class="query_form">
-                    <form action="#">
-                        <div class="form__elements flex">
-                            <label for="cropname">Crop Name</label>
-                            <input type="text" id="cropname">
-                            <span class="error"></span>
-                        </div>
-                        <div class="form__elements flex">
-                            <label for="age">Crop Age(weeks)</label>
-                            <input type="number" id="age">
-                            <span class="error"></span>
-                        </div>
-                        <div class="form__elements flex">
-                            <label for="symptoms">Symptoms</label>
-                            <textarea name="" id="symptoms" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="form__elements flex">
-                            <button class="btn btn-submit" id="searchBtn">Search</button>
-                        </div>
-                    </form>
-                    <button class="form--close query--close" id="formClose">
-                        <i class='bx bx-x'></i>
-                    </button>
-                </div>
-                <div class="query__details">
-                    
-                    <div class="crop__details flex">
-                        <h3 class="title btn--flex"><i class='bx bxs-leaf'></i> Crop Name: </h3>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                    <div class="symptoms">
-                        <h3 class="title btn--flex"><i class='bx bxs-virus'></i>Symptoms</h3>
-                        <div class="spacer">
-                            <ul>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                        </div>
+                    <h2>INVEST NOW:</h2><br>
+                    <form method= 'POST' action='insert.php'>
+                        <label for="name">First Name As Per ID:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email">ID Number:</label><br>
+                        <input type="text" name="idnumber" required><br><br>
+                        <label for="phone">M-Pesa Phone Number:</label><br>
+                        <input type="tel" name="phone" required>
+                          <h2>Select Amount:</h2>
+                        <select id="amount" name="amount" required>
+                        <option  selected></option>
+                        <option>100000</option>
+                        <option>75000</option>
+                        <option>50000</option>
+                        <option>50000</option>
+                        <option>50000</option>
+                        <option>50000</option>
+                      </select><br>
+                      <input type="submit" name="submit" value="Invest"><br><br>
+                         <h2>NOTE!</h2><br>
+                         <p>Reply to th M-Pesa popup!</p>
                         
-                    </div>
-                    <div class="disease">
-                        <h3 class="title">Disease found</h3>
-                        <div class="spacer">
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="treatment">
-                        <h3 class="title">Treatment</h3>
-                        <div class="spacer">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, nesciunt?</p>
-                        </div>
-                    </div>
+                      </form>
                 </div>
             </div>
         </div>
@@ -107,10 +75,9 @@
             <div class="container flex">
                 <div class="hero__details flex">
                     <h1 class="hero__title title">
-                        expert farmers
+                        Pie Investment.
                     </h1>
-                    <p class="hero__text">your online farming partner.You got questions, we got the answers</p>
-                    <a href="#" class="btn" id="queryBtn">Query</a>
+                    <a href="#" class="btn" id="queryBtn">Invest Now.</a>
                 </div>
                 <div class="hero__img">
                     <img src="spinach-3368254.jpg" alt="spinach">
@@ -121,7 +88,7 @@
         <section class="show--case" id="showCase">
 
             <div class="container">
-                <h2 class="show--case__title title">Farming Now</h2>
+                <h2 class="show--case__title title">Watch Our Live Projects Now</h2>
 
                 <div class="flex cases">
                     <div class="show--case__plant">

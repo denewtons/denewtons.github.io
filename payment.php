@@ -31,9 +31,8 @@
             </div>
             <h4>NOTE!</h4>
             <p>Reply to Mpesa popup.<br>Input M-pesa pin <br> to complete payment.<p>
-         
       </form>
-    
+    <div><a href="index.html">Back to home page</a></div>
 </center>
 </body>
 </html>

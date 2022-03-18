@@ -16,11 +16,10 @@
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  
           
-        if($count == 1){ 
-		
-			header('Location:payment.php');
-			 echo '<script> alert("Login successful");</script>';
-        }  
+        if (mysqli_query($con, $sql)){
+            header('Location:home.html');
+			 echo 'Hi $username, welcome to pie investment';
+        }
         else{  
 			include('login.php');
             echo 'username of password is wrong.';  

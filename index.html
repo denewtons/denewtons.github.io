@@ -25,10 +25,9 @@
     
                 <div class="nav--bar__nav">
                     <ul class="nav--bar__items flex">
-                        <li class="nav--bar__item"><a href="/home.html" class="nav--bar__link">Home</a></li>
+                        <li class="nav--bar__item"><a href="home.html" class="nav--bar__link">Home</a></li>
                         <li class="nav--bar__item"><a href="#abt" class="nav--bar__link">About</a></li>
-                        <li class="nav--bar__item"><a href="#services" class="nav--bar__link">Search</a></li>
-                        <li class="nav--bar__item"><a href="#" class="nav--bar__link">Products</a></li>
+                        <li class="nav--bar__item"><a href="#services" class="nav--bar__link">Services</a></li>
                     </ul>
     
                     <button class="nav--bar__close" id="menuClose">
@@ -46,21 +45,15 @@
 
         <div class="form" id="loginForm">
 
-            <form action="checklogin.php" class="login__form">
-                <div class="form__elements flex">
-                    <label for="username">Username</label>
-                    <input type="text" id="username">
-                    <span class="error"></span>
-                </div>
-                <div class="form__elements flex">
-                    <label for="username">Password</label>
-                    <input type="text" id="password">
-                    <span class="error"></span>
-                </div>
-                <div class="form__elements flex">
-                    <button class="btn btn-submit">Login</button>
-                </div>
-            </form>
+            <form action="checklogin.php" method="post">
+                <h2>LOGIN</h2>
+                <label>Username:</label>
+                <input type="text" name="uname"><br><br>
+                <label>Password:</label>
+                <input type="password" name="pass"><br> 
+                <input type="submit" name="submit" value= "Login"><br>
+               
+             </form>
             <button class="form--close login--close" id="formClose">
                 <i class='bx bx-x'></i>
             </button>
@@ -68,26 +61,17 @@
 
         <div class="form" id="regForm">
 
-            <form action="connection.php" class="register__form">
-                <div class="form__elements flex">
-                    <label for="username">Username</label>
-                    <input type="text" id="username">
-                    <span class="error"></span>
-                </div>
-                <div class="form__elements flex">
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-                    <span class="error"></span>
-                </div>
-                <div class="form__elements flex">
-                    <label for="password2">Confirm Password</label>
-                    <input type="password" id="password2">
-                    <span class="error"></span>
-                </div>
-                <div class="form__elements flex">
-                    <button class="btn btn-submit">Register</button>
-                </div>
-            </form>
+            <form action="connection.php" method="post">
+                <h2>SIGN UP</h2>
+                <label>Username:</label><br>
+                <input type="text" name="uname" required><br><br>
+                <label>Phone Number:</label><br>
+                <input type="tel" name="phone" required><br><br>
+                <label>Password:</label><br>
+                <input type="password" name="pass" required><br> <br>
+                <input type="submit" name="submit" value= "Sign Up."><br><br>
+               
+             </form>
             <button class="form--close reg--close" id="formClose">
                 <i class='bx bx-x'></i>
             </button>
@@ -106,8 +90,8 @@
                <p>Learn investment as you earn.<br> How do you feel being charged no tax?.
                   <br><i> Know Investors deepest secret.</i>.
                </p>
-                <a href="#" class="btn" id="loginFormToggle">log in</a>
-                    <a href="#" class="btn" id="regFormToggle">Register</a>
+                <a href="#" class="btn" id="loginFormToggle">log in To Invest</a>
+                    <a href="#" class="btn" id="regFormToggle">Register To Invest</a>
                 </div>
                 <div class="hero__img">
                     <img src="spinach-3368254.jpg" alt="spinach">
@@ -124,7 +108,7 @@
                     <div class="show--case__plant">
                         <img src="kuku.jpg" alt="" class="show--case__img">
                         <div class="show--case__details">
-                            <h3 class="details__title title">Farming.</h3>
+                            <h3 class="details__title title">Farm Agriculture.</h3>
                             <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                             <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
                         </div>
@@ -151,6 +135,40 @@
                             <h3 class="details__title title">Construction Egineering..</h3>
                             <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                             <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex cases">
+                    <div class="show--case__plant">
+                        <img src="kuku.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Machine Learning.</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="cabbage-2633033.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Business Ideas.</h3>
+                            <p class="details__text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="coffee-grains-1474601.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Land Tenancy, Lease and Ownership.</h3>
+                            <p class="details__text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <a href="#" class="btn--flex btn--plain">learn more <i class='bx bxs-right-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <div class="show--case__plant">
+                        <img src="coffee-grains-1474601.jpg" alt="" class="show--case__img">
+                        <div class="show--case__details">
+                            <h3 class="details__title title">Vineo Shoping Site.</h3>
+                            <p class="details__text">We link you to all online shoping platforms.</p>
+                            <a href="shoping.html" class="btn--flex btn--plain">Shop Now.<i class='bx bxs-right-arrow-circle'></i></a>
                         </div>
                     </div>
                 </div>

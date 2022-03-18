@@ -14,7 +14,7 @@ foreach($row as $key=>$value)
 print("</tr>");
 }
 }else{
-print("**There are no comments**");
+print("**No Investments made yet**");
 
 }
 

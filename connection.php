@@ -16,7 +16,7 @@
         $sql = "INSERT INTO pie (username, phonenumber, password) VALUES ('$username','$phonenumber' ,'$password' )";
         $results = mysqli_query($con, $sql);
         if (mysqli_query($con, $sql)){
-            header('Location:payment.php');
+            header('Location:home.html');
 			 echo 'Hi $username, welcome to pie investment';
         }
         

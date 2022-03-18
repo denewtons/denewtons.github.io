@@ -2,20 +2,16 @@
 include('conn.php'); 
 if(isset($_POST['submit']))
 {
-    $name = $_POST['name'];  
-    $email = $_POST['email'];  
-    $gender = $_POST['gender'];  
-    $age = $_POST['age'];
-    $comments = $_POST['comments'];  
+    $name = $_POST['name'];   
+    $idnumber = $_POST['idnumber'];  
+    $phone = $_POST['phone'];
+    $amount = $_POST['amount'];  
 
-$sql1="INSERT INTO people(name,email,gender,age) VALUES('$name','$email','$gender','$age')";
-$sql2="INSERT INTO feedback(name,comments) VALUES('$name','$comments')";
-$result2=mysqli_query($con,$sql2);
-$result1=mysqli_query($con,$sql1);
-
-if(($result1)){
-	echo '<script> alert("Feedback well received!!! ");</script>';
-	include("loggedin.php");
+$sql="INSERT INTO people(name,idnumber,phone,amount) VALUES('$name','$idnumber','$phone','$amount')";
+$result=mysqli_query($con,$sql);
+if(($result)){
+   // include('index.html');
+	echo "Thank you '$name' for investing '$amount' into pie: You will receive a return program via sms in five minutes.";
 }
 else{
 

@@ -15,7 +15,7 @@
     --normal-fs:1rem;
     --normal-ff:'Open Sans', sans-serif;
     --header-ff:'Poppins', sans-serif;
-    --basic-fc:#fff;
+    --basic-fc:#ffffff;
     --accent-c:#4cf84c;
 
 }
@@ -298,6 +298,7 @@ button {
 .footer {
     background-color: var(--accent-c);
     padding: 3rem 0;
+    
 }
 
 .footer__brand {

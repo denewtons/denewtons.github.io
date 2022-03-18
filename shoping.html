@@ -4,219 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vineo.co.ke</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap');
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    color: #585858;
-}
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-@media(max-width:1024px) { 
-    .container {
-        max-width: 100%;
-    }
-    header .container {
-        max-width: 90%;
-    }
-}
-h1{
-    color: blueviolet;
-}
-header {
-    border-bottom: 2px solid yellow;
-}
-header .container{
-    display: flex;
-    justify-content:space-between;
-    padding: 15px 0;
-}
-a {
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 400;
-    background-color: indigo;
-    border-radius: 5%;
-    border: 1px solid red;
-    padding: 5px;
-}
-p {
-     margin: 0.5rem;
-}
-.logo {
-    text-transform: uppercase;
-    color: #000;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 2rem;
-}
-@media(min-width:800px) {
-    .cards {
-        display: flex;
-        flex-direction: inherit;
-        justify-content: space-around;
-        padding: 3rem 0 0 0;
-    }
-    .card {
-        width: 34%;
-    }
-}
-.card {
-    text-align: center;
-    color: #ff3c00;
-    border: solid #2600ff 1px;
-    border-radius: 20px;
-    overflow: hidden;
-    line-height: 1.5rem;
-    padding-bottom: 20px;
-    margin: 0 10px;
-}
-#about{
-    background-color: black;
-    opacity: 0.5;
-    color: white;
-    text-align:center;
-    max-width: 500px;
-    height: auto;
-    padding: auto;
-}
-#about h2{
-    color: red;
-
-}
-#services{
-    color: white;
-    max-width: 400px;
-    height: auto;
-    text-align: center;
-    padding: auto;
-}
-footer{
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-}
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Favcon.png" type="image/x-icon">
+    <title>pieinvestvineo</title>
+    
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"></div>
-            <a href="#about">About</a>
-                <a href="index.html">Back to Home Page</a>
-        </div>
+    <header class="header">
+
+        
+        <nav class="nav--bar flex">
+            <div class="container flex">
+                <div class="nav--bar__brand">
+                    <a href="index.html">
+                        <img src="fav.png" alt="Expert Farmers Brand" class="nav--bar__img">
+                    </a>
+                    
+                </div>
+    
+                <div class="nav--bar__nav">
+                    <ul class="nav--bar__items flex">
+                        <li class="nav--bar__item"><a href="home.html" class="nav--bar__link">Back To Home</a></li>
+                    </ul>
+    
+                    <button class="nav--bar__close" id="menuClose">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </div>
+                <button class="nav--bar__toggle" id="menuOpen">
+                    <i class='bx bxs-grid-alt'></i>
+                </button>
+            </div>
+        </nav>
+
     </header>
-    <div class="cards container">
-        <h1>COLLECT YUOR BEST AFFORDABLE CHOICES HERE.</h1>
-        <div class="card">
-            <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
+    <section class="hero">
+        <div class="container flex" style="color: black;">
+            <div class="hero__details flex">
+                <h1 class="hero__title title">
+                   About Vineo:
+                </h1>
+                <h1>Affordable online shoping site.</h1>
+                <p><b>VINEO</b> is an online shopping site for promoting other shopingsites and advertising other companies' products.</p>
+           <p>It also sells its products from its originanal manufacturing company called <b><i>VINEO-bit</i></b></p>
+       </div>
+    </div>
+  
+<div class="flex cases">
+    <h1>THE BEST YOU CAN EVER NEED HOME.</h1>
+    
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
             <p class="description">Electronics.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
-            </form>            
+            </form> 
         </div>
-
-        <div class="card">
-            <p class="description" style="background-image: url(https://images.app.goo.gl/jjgGKzGhzK1PTunU9);">Clothing.</p>
+    </div>
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
-            </form>
+            </form> 
         </div>
-
-        <div class="card">
-            <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-            <p class="description">Foodstuffs.</p>
+    </div>
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
-    </form>
+            </form> 
         </div>
-        <div class="card">
-            <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-            <p class="description">Foodstuffs.</p>
+    </div>
+</div>
+<div class="flex cases">
+    <h1>THE BEST YOU CAN EVER NEED HOME.</h1>
+    
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
             <form action="https://killimall.co.ke/product-category/electronics/">
                 <input type="submit">
-    </form>
+            </form> 
         </div>
-    <div class="card">
-        <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-        <p class="description">Foodstuffs.</p>
-        <form action="https://killimall.co.ke/product-category/electronics/">
-            <input type="submit">
-</form>
     </div>
-<div class="card">
-    <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-    <p class="description">Foodstuffs.</p>
-    <form action="https://killimall.co.ke/product-category/electronics/">
-        <input type="submit">
-</form>
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
+            <form action="https://killimall.co.ke/product-category/electronics/">
+                <input type="submit">
+            </form> 
+        </div>
+    </div>
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
+            <form action="https://killimall.co.ke/product-category/electronics/">
+                <input type="submit">
+            </form> 
+        </div>
+    </div>
 </div>
+<div class="flex cases">
+    <h1>THE BEST YOU CAN EVER NEED HOME.</h1>
+    
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
+            <form action="https://killimall.co.ke/product-category/electronics/">
+                <input type="submit">
+            </form> 
+        </div>
+    </div>
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
+            <form action="https://killimall.co.ke/product-category/electronics/">
+                <input type="submit">
+            </form> 
+        </div>
+    </div>
+    <div class="show--case__plant">
+        <div class="show--case__details">
+            <img src="kuku.jpg" alt="" class="show--case__img">
+            <p class="description">Electronics.</p>
+            <form action="https://killimall.co.ke/product-category/electronics/">
+                <input type="submit">
+            </form> 
+        </div>
+    </div>
 </div>
-<div class="cards container">
-    <h1>THE BEST YOU CANEVER NEED HOME.</h1>
-    <div class="card">
-        <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-        <p class="description">Electronics.</p>
-        <form action="https://killimall.co.ke/product-category/electronics/">
-            <input type="submit">
-        </form>            
+</section>
+<footer class="footer">
+
+    <div class="container flex">
+
+        <div class="footer__brand flex">
+            <img src="fav.png" alt="Expert Farmer brand" class="footer__img">
+            <p>Pie Investment Inc</p>
+        </div>
+        <ul class="footer__nav flex">
+            <li>+254-011-511-6968</li>
+            <li>@pieivestment.co.ke</li>
+            <li>Kisumu Megacity First Floor.</li>
+        </ul>
+            
+            <div class="footer__details">
+            <div class="footer__socials">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram-alt'></i>
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div class="card">
-        <p class="description" style="background-image: url(https://images.app.goo.gl/jjgGKzGhzK1PTunU9);">Clothing.</p>
-        <form action="https://killimall.co.ke/product-category/electronics/">
-            <input type="submit">
-        </form>
-    </div>
-
-    <div class="card">
-        <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-        <p class="description">Foodstuffs.</p>
-        <form action="https://killimall.co.ke/product-category/electronics/">
-            <input type="submit">
-</form>
-    </div>
-    <div class="card">
-        <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-        <p class="description">Foodstuffs.</p>
-        <form action="https://killimall.co.ke/product-category/electronics/">
-            <input type="submit">
-</form>
-    </div>
-<div class="card">
-    <img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-    <p class="description">Foodstuffs.</p>
-    <form action="https://killimall.co.ke/product-category/electronics/">
-        <input type="submit">
-</form>
-</div>
-<div class="card">
-<img src="https://images.app.goo.gl/jjgGKzGhzK1PTunU9">
-<p class="description">Foodstuffs.</p>
-<form action="https://killimall.co.ke/product-category/electronics/">
-    <input type="submit">
-</form>
-</div>
-</div>
-<footer>
-    <div id="about">
-        <h2>About us</h2>
-        <p><b>VINEO</b> is an online shopping site for promoting other shopingsites and advertising other companies' products.</p>
-        <p>It also sells its products from its originanal manufacturing company called <b><i>VINEO-bit</i></b></p>
-    </div>
-    <div id="services">
-        <h3>Find out our service in general using the following link</h3><br>
-        <a href="#href">pieinvestment.</a>
-    </div>
-    </div>
 </footer>
+
+<script src="app.js"></script>
     
 </body>
 </html>
