@@ -20,7 +20,7 @@
 			 echo 'Hi $username, welcome to pie investment';
         }
         
-        if (isset($_POST['username_check'])) {
+        if (isset($_POST['username'])) {
             $username = $_POST['username'];
             $sql = "SELECT * FROM pie WHERE username='$username'";
             $results = mysqli_query($con, $sql);
@@ -31,7 +31,7 @@
             }
             exit();
         }
-        if (isset($_POST['phonenumber_check'])) {
+        if (isset($_POST['phonenumber'])) {
             $phonenumber = $_POST['phonenumber'];
             $sql = "SELECT * FROM users WHERE phonenumber='$phonenumber'";
             $results = mysqli_query($con, $sql);
