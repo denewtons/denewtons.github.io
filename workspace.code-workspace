@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\IAP"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "index.html"
+	}
+}
